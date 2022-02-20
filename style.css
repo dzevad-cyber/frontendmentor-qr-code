@@ -33,7 +33,8 @@ body {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: fill;
 }
 
 /*
@@ -53,23 +54,26 @@ img {
 
 .card {
   display: grid;
-  row-gap: 15px;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 3rem;
 
-  max-width: 37.5rem;
-  padding: 2rem;
+  max-width: 32rem;
+  height: 50rem;
+  padding: 1.5rem;
   background-color: var(--bg-white);
   border-radius: 20px;
 }
 
 .card__header {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 700;
+  height: 28.5rem;
 }
 
 .card__main {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
   text-align: center;
 }
 
