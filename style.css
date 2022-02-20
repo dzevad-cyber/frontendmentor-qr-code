@@ -28,6 +28,12 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /*
@@ -36,6 +42,41 @@ body {
 ------------------------------
 */
 .container {
+  display: grid;
+  place-content: center;
+
   width: 100vw;
   height: 100vh;
+
+  background-color: var(--bg-light);
+}
+
+.card {
+  display: grid;
+  row-gap: 15px;
+
+  max-width: 37.5rem;
+  padding: 2rem;
+  background-color: var(--bg-white);
+  border-radius: 20px;
+}
+
+.card__header {
+  overflow: hidden;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.card__main {
+  display: grid;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 2.5rem;
+}
+
+.card__text {
+  letter-spacing: 0.5px;
 }
